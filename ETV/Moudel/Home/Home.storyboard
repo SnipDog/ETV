@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="6AM-Vy-Lnb">
             <objects>
-                <viewController id="r5a-Ov-W2s" sceneMemberID="viewController">
+                <viewController id="r5a-Ov-W2s" customClass="HomeViewController" customModule="ETV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qta-tU-34K"/>
                         <viewControllerLayoutGuide type="bottom" id="tam-ke-aud"/>
@@ -17,12 +17,62 @@
                     <view key="view" contentMode="scaleToFill" id="Fei-Ic-I1Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lfK-jA-8b3">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="header" rowHeight="200" id="cJp-D1-I30" customClass="HomeHeaderCell" customModule="ETV" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJp-D1-I30" id="ueL-d0-0T5">
+                                            <frame key="frameInset" width="375" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3p-Gu-gHj" customClass="SDCycleScrollView">
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b3p-Gu-gHj" firstAttribute="leading" secondItem="ueL-d0-0T5" secondAttribute="leading" id="0Uh-Rm-FfO"/>
+                                                <constraint firstAttribute="trailing" secondItem="b3p-Gu-gHj" secondAttribute="trailing" id="GbV-Fv-6gG"/>
+                                                <constraint firstItem="b3p-Gu-gHj" firstAttribute="top" secondItem="ueL-d0-0T5" secondAttribute="top" id="LvE-Vn-6f2"/>
+                                                <constraint firstAttribute="bottom" secondItem="b3p-Gu-gHj" secondAttribute="bottom" id="NLF-2U-OGQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bannerView" destination="b3p-Gu-gHj" id="wOp-69-MMV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="6Bh-WQ-Kr2">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Bh-WQ-Kr2" id="b3j-9n-XEm">
+                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="r5a-Ov-W2s" id="f5F-Xh-LOU"/>
+                                    <outlet property="delegate" destination="r5a-Ov-W2s" id="W1s-F5-AfZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lfK-jA-8b3" secondAttribute="trailing" id="1xK-OD-3rs"/>
+                            <constraint firstAttribute="bottom" secondItem="lfK-jA-8b3" secondAttribute="bottom" id="9ez-iU-31p"/>
+                            <constraint firstItem="lfK-jA-8b3" firstAttribute="leading" secondItem="Fei-Ic-I1Q" secondAttribute="leading" id="Wy3-xs-bov"/>
+                            <constraint firstItem="lfK-jA-8b3" firstAttribute="top" secondItem="Fei-Ic-I1Q" secondAttribute="top" id="lup-Vt-swf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="lfK-jA-8b3" id="ftN-tz-kPE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHt-k5-W1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="424"/>
+            <point key="canvasLocation" x="263" y="-58"/>
         </scene>
     </scenes>
 </document>

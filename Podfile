@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'ETV' do
 pod 'Then', '~> 2.0.0'
+pod 'SDCycleScrollView', '~> 1.65'
 end
 
