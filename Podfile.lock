@@ -1,0 +1,10 @@
+PODS:
+  - Then (2.0.0)
+
+DEPENDENCIES:
+  - Then (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  Then: 460074ffe907de3536d5e88f189dac5ef7cf0869
+
+COCOAPODS: 0.39.0
