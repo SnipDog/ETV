@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Goddess View Controller-->
         <scene sceneID="QG7-y6-NLR">
             <objects>
-                <viewController id="uGs-dN-c7l" sceneMemberID="viewController">
+                <viewController id="uGs-dN-c7l" customClass="GoddessViewController" customModule="ETV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vl2-Mh-JR7"/>
                         <viewControllerLayoutGuide type="bottom" id="tKU-Ga-IgM"/>

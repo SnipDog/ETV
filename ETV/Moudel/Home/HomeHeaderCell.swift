@@ -13,17 +13,22 @@ class HomeHeaderCell: UITableViewCell {
 
     @IBOutlet weak var bannerView: SDCycleScrollView!
     
-    var bannerImageArray = [URL](){
+    var titls = [String]()
+    var images = [URL]()
+    var banners = [[String : AnyObject]](){
         didSet{
-            self.bannerView.imageURLStringsGroup = bannerImageArray
-            self.bannerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
-            self.bannerView.titlesGroup = ["第一个banner","第二个banner","第三个banner"]
+            for data in banners{
+                titls.append(data["name"]! as! String)
+                images.append(URL.init(string: data["bigimg"]! as! String)!)
+            }
+            bannerView.imageURLStringsGroup = images
+            bannerView.titlesGroup = titls
+            bannerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -7,27 +7,35 @@
 //
 
 import UIKit
-class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    @IBOutlet weak var tableView: UITableView!
+import Alamofire
 
-    let bannerImageArray = [URL.init(string: "https://img1.doubanio.com/view/photo/photo/public/p2379444988.jpg"),
-                            URL.init(string: "https://img1.doubanio.com/view/photo/photo/public/p2379444988.jpg"),
-                            URL.init(string: "https://img1.doubanio.com/view/photo/photo/public/p2379444988.jpg"),]
+class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let reqeutUrl = "http://api.m.panda.tv/ajax_rmd_ads_get?__version=1.1.4.1261&__plat=ios&__channel=appstore&pt_sign=ef767d23f0a6ccd476b738c0b91c4109&pt_time=1475204481"
+    
+    var banners = [[String:AnyObject]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let header = tableView.dequeueReusableCell(withIdentifier: "header") as! HomeHeaderCell
-        header.bannerImageArray = bannerImageArray as! [URL];
-        tableView.tableHeaderView = header
-        
+            loadBanner()
         // Do any additional setup after loading the view.
     }
 
     
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loadBanner() {
+        let header = tableView.dequeueReusableCell(withIdentifier: "header") as! HomeHeaderCell
+        tableView.tableHeaderView = header
+        Alamofire.request(reqeutUrl).responseJSON { response in
+            if let json = response.result.value {
+                let jsonData = json as! [String:AnyObject]
+                    for data in jsonData["data"] as! [[String : AnyObject]]{
+                        self.banners.append(data)
+                }
+                header.banners = self.banners;
+            }
+        }
     }
     
 
@@ -39,15 +47,12 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         return cell
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
+    
 
     
 }

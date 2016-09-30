@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="cBI-ZP-Lda">
             <objects>
-                <viewController id="rtz-VX-Emd" sceneMemberID="viewController">
+                <viewController id="rtz-VX-Emd" customClass="GameViewController" customModule="ETV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Gn-Qz-Y5t"/>
                         <viewControllerLayoutGuide type="bottom" id="gKF-X9-Be4"/>
