@@ -8,8 +8,12 @@
 
 import UIKit
 import Alamofire
-
+import Then
 class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    var titleView = TitleView().then {
+        $0.frame = CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: 40)
+    }
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -26,6 +30,8 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
             loadBanner()
             loadData()
+            loadTitleView()
+
         // Do any additional setup after loading the view.
     }
 
@@ -45,6 +51,12 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
     }
     
+    
+    func loadTitleView() {
+        view.addSubview(titleView)
+        // load data from service
+        titleView.titles = ["精彩推荐","全部直播","DOTA2"]
+    }
 
     func loadData() {
         Alamofire.request(kDataReqeutUrl).responseJSON { response in

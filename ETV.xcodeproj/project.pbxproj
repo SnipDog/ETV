@@ -24,6 +24,7 @@
 		35126F4B1D9CE64A00B6FBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35126F4A1D9CE64A00B6FBEC /* Main.storyboard */; };
 		35126F4E1D9CE74E00B6FBEC /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35126F4D1D9CE74E00B6FBEC /* UIExtension.swift */; };
 		35126F501D9D053400B6FBEC /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35126F4F1D9D053400B6FBEC /* HomeHeaderCell.swift */; };
+		355CCFB41DAE341100290D8F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355CCFB31DAE341100290D8F /* TitleView.swift */; };
 		35A7DDF61D9D0CEA009BCA87 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2C1D9E0E88009BCA87 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2B1D9E0E88009BCA87 /* Banner.swift */; };
@@ -52,9 +53,10 @@
 		35126F4A1D9CE64A00B6FBEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		35126F4D1D9CE74E00B6FBEC /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		35126F4F1D9D053400B6FBEC /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
+		355CCFB31DAE341100290D8F /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
-		35A7DE2B1D9E0E88009BCA87 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		35A7DE2B1D9E0E88009BCA87 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = ../Moudel/Home/Banner.swift; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		9585B88DBD03C00BCE76E4CC /* Pods-ETV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		35126F091D9CDE8A00B6FBEC /* ETV */ = {
 			isa = PBXGroup;
 			children = (
+				355CCFB51DAE344100290D8F /* Model */,
 				35126F1C1D9CE37A00B6FBEC /* Moudel */,
 				35126F221D9CE37A00B6FBEC /* Others */,
 			);
@@ -146,9 +149,9 @@
 				35126F411D9CE46100B6FBEC /* HomeViewController.swift */,
 				35126F431D9CE46900B6FBEC /* Home.storyboard */,
 				35126F4F1D9D053400B6FBEC /* HomeHeaderCell.swift */,
-				35A7DE2B1D9E0E88009BCA87 /* Banner.swift */,
 				35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */,
 				35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */,
+				355CCFB31DAE341100290D8F /* TitleView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -190,6 +193,14 @@
 				35126F4D1D9CE74E00B6FBEC /* UIExtension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		355CCFB51DAE344100290D8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35A7DE2B1D9E0E88009BCA87 /* Banner.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4916C3B8C2C254F668F72631 /* Frameworks */ = {
@@ -352,6 +363,7 @@
 				35126F471D9CE51000B6FBEC /* MainTabBarController.swift in Sources */,
 				35126F401D9CE45900B6FBEC /* GoddessViewController.swift in Sources */,
 				35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */,
+				355CCFB41DAE341100290D8F /* TitleView.swift in Sources */,
 				35126F421D9CE46100B6FBEC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

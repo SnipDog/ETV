@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJp-D1-I30" id="ueL-d0-0T5">
-                                            <frame key="frameInset" width="375" height="199"/>
+                                            <frame key="frameInset" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3p-Gu-gHj" customClass="SDCycleScrollView">
@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="228" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Bh-WQ-Kr2" id="b3j-9n-XEm">
-                                            <frame key="frameInset" width="375" height="213"/>
+                                            <frame key="frameInset" width="375" height="213.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -62,8 +62,8 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lfK-jA-8b3" secondAttribute="trailing" id="1xK-OD-3rs"/>
                             <constraint firstAttribute="bottom" secondItem="lfK-jA-8b3" secondAttribute="bottom" id="9ez-iU-31p"/>
+                            <constraint firstItem="lfK-jA-8b3" firstAttribute="top" secondItem="Fei-Ic-I1Q" secondAttribute="top" constant="40" id="Ri5-I9-kMj"/>
                             <constraint firstItem="lfK-jA-8b3" firstAttribute="leading" secondItem="Fei-Ic-I1Q" secondAttribute="leading" id="Wy3-xs-bov"/>
-                            <constraint firstItem="lfK-jA-8b3" firstAttribute="top" secondItem="Fei-Ic-I1Q" secondAttribute="top" id="lup-Vt-swf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHt-k5-W1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229.59999999999999" y="-216.34182908545728"/>
+            <point key="canvasLocation" x="-135" y="-270"/>
         </scene>
     </scenes>
 </document>

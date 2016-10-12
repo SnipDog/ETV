@@ -98,6 +98,10 @@ extension UIColor {
         
         return UIColor(red: CGFloat(arc4random_uniform(256)) / 255, green: CGFloat(arc4random_uniform(256)) / 255, blue: CGFloat(arc4random_uniform(256)) / 255, alpha: 1.0)
     }
+    
+    class func themeColorGreen() ->UIColor{
+        return UIColor.init(colorLiteralRed: 36/255.0, green: 205/255.0, blue: 137/255.0, alpha: 1.0)
+    }
 }
 
 
