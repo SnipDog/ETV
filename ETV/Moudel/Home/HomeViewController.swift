@@ -11,6 +11,7 @@ import Alamofire
 import Then
 class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
+    // MARK: Init Properties
     var titleView = TitleView().then {
         $0.frame = CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: 40)
     }
@@ -26,15 +27,28 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     var datas = [[String : AnyObject]]()
     
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+            configUI()
             loadBanner()
             loadData()
             loadTitleView()
-
         // Do any additional setup after loading the view.
     }
 
+    
+    func configUI(){
+        self.title = nil
+        self.navigationController?.tabBarItem.title = "首页"
+        let navView = UIImageView().then {
+            let img = UIImage(named: "slogon")
+            $0.image = img
+            $0.sizeToFit()
+        }
+        
+        self.navigationItem.titleView = navView
+    }
     
     func loadBanner() {
         let banner = tableview.dequeueReusableCell(withIdentifier: "header") as! HomeHeaderCell
@@ -69,6 +83,10 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
     }
     
+    // MARK: Actions
+    @IBAction func search(_ sender: UIBarButtonItem) {
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -85,9 +103,7 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    
 }
 
 

@@ -66,13 +66,23 @@
                             <constraint firstItem="lfK-jA-8b3" firstAttribute="leading" secondItem="Fei-Ic-I1Q" secondAttribute="leading" id="Wy3-xs-bov"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4Mk-1n-lV9">
+                        <barButtonItem key="rightBarButtonItem" image="searchbutton_18x18_" id="Y4Q-7h-xbI">
+                            <connections>
+                                <action selector="search:" destination="r5a-Ov-W2s" id="k6q-Cm-91N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="lfK-jA-8b3" id="dJy-S1-vbq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHt-k5-W1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-135" y="-270"/>
+            <point key="canvasLocation" x="1428" y="-337.78110944527737"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="searchbutton_18x18_" width="18" height="18"/>
+    </resources>
 </document>

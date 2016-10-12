@@ -66,6 +66,7 @@ class TitleView: UIScrollView {
     }
     
     func setupSubViews() {
+        backgroundColor = UIColor.white
         addSubview(line)
     }
 }
