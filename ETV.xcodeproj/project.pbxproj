@@ -27,6 +27,8 @@
 		35A7DDF61D9D0CEA009BCA87 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2C1D9E0E88009BCA87 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2B1D9E0E88009BCA87 /* Banner.swift */; };
+		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
+		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
 		F5DBFDB76CCA8A0F1800B1D2 /* Pods_ETV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9466DB3AA2FC0B28F41D9 /* Pods_ETV.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2B1D9E0E88009BCA87 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		9585B88DBD03C00BCE76E4CC /* Pods-ETV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.release.xcconfig"; sourceTree = "<group>"; };
 		FCEDEAC18A20560725245C08 /* Pods-ETV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,8 @@
 				35126F431D9CE46900B6FBEC /* Home.storyboard */,
 				35126F4F1D9D053400B6FBEC /* HomeHeaderCell.swift */,
 				35A7DE2B1D9E0E88009BCA87 /* Banner.swift */,
+				35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */,
+				35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				35126F321D9CE3EE00B6FBEC /* Info.plist in Resources */,
 				35126F3E1D9CE44B00B6FBEC /* Goddess.storyboard in Resources */,
 				35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */,
+				35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */,
 				35126F4B1D9CE64A00B6FBEC /* Main.storyboard in Resources */,
 				35126F341D9CE40C00B6FBEC /* Entertainment.storyboard in Resources */,
 				35126F2B1D9CE37A00B6FBEC /* Assets.xcassets in Resources */,
@@ -344,6 +351,7 @@
 				35126F4E1D9CE74E00B6FBEC /* UIExtension.swift in Sources */,
 				35126F471D9CE51000B6FBEC /* MainTabBarController.swift in Sources */,
 				35126F401D9CE45900B6FBEC /* GoddessViewController.swift in Sources */,
+				35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */,
 				35126F421D9CE46100B6FBEC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
