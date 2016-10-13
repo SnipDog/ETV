@@ -77,8 +77,9 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             if let json = response.result.value {
                 let jsonData = json as! [String:AnyObject]
                 for data in jsonData["data"] as! [[String : AnyObject]]{
-                    self.banners.append(data)
+                    self.datas.append(data)
                 }
+                self.tableview.reloadData()
             }
         }
     }
@@ -89,15 +90,20 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return datas.count 
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeCell
+        cell.data = datas[indexPath.row]
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 290
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
