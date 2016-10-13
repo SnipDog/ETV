@@ -10,6 +10,11 @@ import UIKit
 import Kingfisher
 class HomeCell: UITableViewCell {
 
+    @IBOutlet weak var titleIcon: UIImageView!
+
+    @IBOutlet weak var headerTitle: UILabel!
+
+    
     @IBOutlet weak var bgIcon1: UIImageView!
     @IBOutlet weak var bgIcon2: UIImageView!
     @IBOutlet weak var bgIcon3: UIImageView!
@@ -30,12 +35,17 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var personCount3: UIButton!
     @IBOutlet weak var personCount4: UIButton!
     
+    @IBOutlet weak var more: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     var data = [String : AnyObject](){
         didSet{
+            let type = data["type"] as! [String : String]
+            titleIcon.kf.setImage(with: URL(string: type["icon"]!))
+            headerTitle.text = type["cname"]
+            more.isHidden = type["cname"] == "热门" || type["cname"] == "猜你喜欢"
             let items = data["items"] as! [[String:AnyObject]]
             let item1 = items.first!
             let userinfo1 = item1["userinfo"] as! [String:AnyObject]
