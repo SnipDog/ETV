@@ -14,6 +14,10 @@ class MineViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        //我是测试 地址
     }
 
     override func didReceiveMemoryWarning() {
