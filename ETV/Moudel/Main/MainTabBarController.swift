@@ -19,8 +19,8 @@ class MainTabBarController: UITabBarController {
     
     func setVc() {
         addChildViewController("Home", "首页", UIImage(named:"menu_homepage_24x24_"), UIImage(named:"menu_homepage_sel_24x24_"))
-        addChildViewController("Entertainment", "游戏", UIImage(named:"menu_youxi_24x24_"), UIImage(named:"menu_youxi_sel_24x24_"))
-        addChildViewController("Game", "娱乐", UIImage(named:"menu_yule_24x24_"),UIImage(named: "menu_yule_sel_24x24_"))
+        addChildViewController("Game", "游戏", UIImage(named:"menu_youxi_24x24_"), UIImage(named:"menu_youxi_sel_24x24_"))
+        addChildViewController("Entertainment", "娱乐", UIImage(named:"menu_yule_24x24_"),UIImage(named: "menu_yule_sel_24x24_"))
         addChildViewController("Goddess", "女神", UIImage(named:"menu_goddess_normal_20x21_"), UIImage(named:"menu_goddess_20x21_"))
         addChildViewController("Mine", "我的", UIImage(named:"menu_mine_24x24_"), UIImage(named:"menu_mine_sel_24x24_"))
     }

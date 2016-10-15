@@ -25,6 +25,7 @@
 		35126F4E1D9CE74E00B6FBEC /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35126F4D1D9CE74E00B6FBEC /* UIExtension.swift */; };
 		35126F501D9D053400B6FBEC /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35126F4F1D9D053400B6FBEC /* HomeHeaderCell.swift */; };
 		355CCFB41DAE341100290D8F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355CCFB31DAE341100290D8F /* TitleView.swift */; };
+		3574178A1DB1E2E200840EF7 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357417891DB1E2E200840EF7 /* GameCell.swift */; };
 		35A7DDF61D9D0CEA009BCA87 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2C1D9E0E88009BCA87 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2B1D9E0E88009BCA87 /* Banner.swift */; };
@@ -54,6 +55,7 @@
 		35126F4D1D9CE74E00B6FBEC /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		35126F4F1D9D053400B6FBEC /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		355CCFB31DAE341100290D8F /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		357417891DB1E2E200840EF7 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2B1D9E0E88009BCA87 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = ../Moudel/Home/Banner.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				35126F371D9CE42900B6FBEC /* GameViewController.swift */,
 				35126F391D9CE42F00B6FBEC /* Game.storyboard */,
+				357417891DB1E2E200840EF7 /* GameCell.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */,
 				355CCFB41DAE341100290D8F /* TitleView.swift in Sources */,
 				35126F421D9CE46100B6FBEC /* HomeViewController.swift in Sources */,
+				3574178A1DB1E2E200840EF7 /* GameCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
