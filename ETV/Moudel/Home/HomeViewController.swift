@@ -13,7 +13,7 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     // MARK: Init Properties
     var titleView = TitleView().then {
-        $0.frame = CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: 40)
+        $0.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40)
     }
     
     @IBOutlet weak var tableview: UITableView!
