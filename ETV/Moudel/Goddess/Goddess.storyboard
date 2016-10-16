@@ -17,12 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="FkV-zT-2TL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61D-XX-7fJ">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uGs-dN-c7l" id="sza-rb-250"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MeZ-2c-ZX1"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MeZ-2c-ZX1" firstAttribute="centerY" secondItem="FkV-zT-2TL" secondAttribute="centerY" id="6ci-PJ-Wfi"/>
+                            <constraint firstItem="61D-XX-7fJ" firstAttribute="top" secondItem="FkV-zT-2TL" secondAttribute="top" id="FO7-oB-Ipj"/>
+                            <constraint firstAttribute="bottom" secondItem="61D-XX-7fJ" secondAttribute="bottom" id="GPq-zr-2Dw"/>
+                            <constraint firstItem="MeZ-2c-ZX1" firstAttribute="centerX" secondItem="FkV-zT-2TL" secondAttribute="centerX" id="pDO-wA-HAV"/>
+                            <constraint firstAttribute="trailing" secondItem="61D-XX-7fJ" secondAttribute="trailing" id="raL-ku-594"/>
+                            <constraint firstItem="61D-XX-7fJ" firstAttribute="leading" secondItem="FkV-zT-2TL" secondAttribute="leading" id="z99-7B-dds"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Indicator" destination="MeZ-2c-ZX1" id="5VW-WQ-xJP"/>
+                        <outlet property="webView" destination="61D-XX-7fJ" id="on6-eH-q8i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6F-iq-Kwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="-63"/>
+            <point key="canvasLocation" x="212" y="-67.016491754122939"/>
         </scene>
     </scenes>
 </document>

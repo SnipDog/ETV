@@ -10,12 +10,15 @@ import UIKit
 import Alamofire
 class GameViewController: UIViewController {
 
+    // MARK:Init Properties
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
     var models = [[String : AnyObject]]()
     let kRequestUrl = "http://api.m.panda.tv/index.php?method=category.list&type=game&__version=2.0.1.1339&__plat=ios&__channel=appstore&pt_sign=f8802801e9daf1d0f0e09027aac27c6a&pt_time=1476504216"
     let margin = CGFloat(5)
     
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()

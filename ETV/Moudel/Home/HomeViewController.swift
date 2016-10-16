@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import Then
-class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class HomeViewController: UIViewController {
     
     // MARK: Init Properties
     var titleView = TitleView().then {
@@ -88,11 +88,19 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     @IBAction func search(_ sender: UIBarButtonItem) {
         
     }
+  
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+}
+
+extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datas.count 
+        return datas.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeCell
@@ -103,13 +111,4 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 321
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-
-
-
