@@ -22,7 +22,57 @@ class MainNavigationController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
+    override class func initialize(){
+        setAppearance()
+        super.initialize()
+    }
+    
+    private class func setAppearance() {
+        
+    }
 
+    override init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?) {
+        super.init(navigationBarClass: navigationBarClass, toolbarClass: toolbarClass)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+    }
+    
+    override init(rootViewController: UIViewController) {
+        super.init(rootViewController: rootViewController)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        
+        if childViewControllers.count > 0 {
+            
+            //设置返回按钮
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.itemWith(bg: "setting_back", highBg: "setting_back", target: self, imageInset: UIEdgeInsetsMake(0, 0, 0, 0), action: #selector(self.back))
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        
+        super.pushViewController(viewController, animated: true)
+    }
+    
+    override func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
+        return super.popToViewController(viewController, animated: animated)
+    }
+    
+    override func popViewController(animated: Bool) -> UIViewController? {
+        return super.popViewController(animated: animated)
+    }
+
+    func back() {
+        self.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

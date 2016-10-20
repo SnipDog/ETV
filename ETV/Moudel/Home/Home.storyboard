@@ -352,6 +352,7 @@
                         <barButtonItem key="rightBarButtonItem" image="searchbutton_18x18_" id="Y4Q-7h-xbI">
                             <connections>
                                 <action selector="search:" destination="r5a-Ov-W2s" id="k6q-Cm-91N"/>
+                                <segue destination="hB7-mI-Zcl" kind="show" id="gUd-L0-MsI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -361,10 +362,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHt-k5-W1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="-337.78110944527737"/>
+            <point key="canvasLocation" x="758" y="-330"/>
+        </scene>
+        <!--Home Search View Controller-->
+        <scene sceneID="3dO-QP-taC">
+            <objects>
+                <viewController id="hB7-mI-Zcl" customClass="HomeSearchViewController" customModule="ETV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FMs-X5-Ts1"/>
+                        <viewControllerLayoutGuide type="bottom" id="dbx-oS-lPp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Gj-LF-qLx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nodata_bkg_200x95_" translatesAutoresizingMaskIntoConstraints="NO" id="MVO-Wx-ItO"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在这里,你会找到最有趣的直播。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-HD-MjZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LTV-HD-MjZ" firstAttribute="centerX" secondItem="MVO-Wx-ItO" secondAttribute="centerX" id="3Rm-Sh-2rm"/>
+                            <constraint firstItem="MVO-Wx-ItO" firstAttribute="centerX" secondItem="6Gj-LF-qLx" secondAttribute="centerX" id="c96-5i-8EN"/>
+                            <constraint firstItem="LTV-HD-MjZ" firstAttribute="top" secondItem="MVO-Wx-ItO" secondAttribute="bottom" constant="20" id="v8d-TQ-oaK"/>
+                            <constraint firstItem="MVO-Wx-ItO" firstAttribute="centerY" secondItem="6Gj-LF-qLx" secondAttribute="centerY" id="wWV-BG-UE8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TtP-eU-XfQ">
+                        <barButtonItem key="leftBarButtonItem" image="setting_back" id="iRg-8p-e0A"/>
+                        <barButtonItem key="rightBarButtonItem" image="searchbutton_18x18_" id="jHs-x7-SAV">
+                            <connections>
+                                <action selector="search:" destination="r5a-Ov-W2s" id="e72-Id-ZAu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOn-SM-J7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="-338"/>
         </scene>
     </scenes>
     <resources>
+        <image name="nodata_bkg_200x95_" width="173" height="83"/>
         <image name="searchbutton_18x18_" width="18" height="18"/>
+        <image name="setting_back" width="19" height="19"/>
     </resources>
 </document>

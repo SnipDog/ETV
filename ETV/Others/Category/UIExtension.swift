@@ -132,9 +132,39 @@ extension UIColor {
     class func themeColorGreen() ->UIColor{
         return UIColor.init(colorLiteralRed: 36/255.0, green: 205/255.0, blue: 137/255.0, alpha: 1.0)
     }
+    
 }
 
-
+extension UIBarButtonItem {
+    
+    class func itemWith(bg: String, highBg: String, target: AnyObject, imageInset: UIEdgeInsets, action: Selector) -> UIBarButtonItem {
+        
+        let button = UIButton()
+        
+        button.setImage(UIImage(named: bg), for: UIControlState.normal)
+        button.setImage(UIImage(named: highBg), for: UIControlState.highlighted)
+        button.imageEdgeInsets = imageInset
+        button.sizeToFit()
+        button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        
+        return UIBarButtonItem(customView: button)
+    }
+    
+    class func itemWithButton(bg: String, highBg: String, imageInset: UIEdgeInsets) -> UIBarButtonItem {
+        
+        let button = UIButton()
+        
+        button.setImage(UIImage(named: bg), for: UIControlState.normal)
+        button.setImage(UIImage(named: highBg), for: UIControlState.highlighted)
+        button.imageEdgeInsets = imageInset
+        button.sizeToFit()
+        
+        return UIBarButtonItem(customView: button)
+    }
+    
+    
+    
+}
 
 
 extension UIStoryboard {

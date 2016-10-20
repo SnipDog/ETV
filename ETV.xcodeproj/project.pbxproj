@@ -31,6 +31,7 @@
 		35A7DE2C1D9E0E88009BCA87 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2B1D9E0E88009BCA87 /* Banner.swift */; };
 		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
 		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
+		35E4EBB71DB8BE440092D04C /* HomeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E4EBB61DB8BE440092D04C /* HomeSearchViewController.swift */; };
 		F5DBFDB76CCA8A0F1800B1D2 /* Pods_ETV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9466DB3AA2FC0B28F41D9 /* Pods_ETV.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		35A7DE2B1D9E0E88009BCA87 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = ../Moudel/Home/Banner.swift; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		35E4EBB61DB8BE440092D04C /* HomeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSearchViewController.swift; sourceTree = "<group>"; };
 		9585B88DBD03C00BCE76E4CC /* Pods-ETV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.release.xcconfig"; sourceTree = "<group>"; };
 		FCEDEAC18A20560725245C08 /* Pods-ETV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 				35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */,
 				35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */,
 				355CCFB31DAE341100290D8F /* TitleView.swift */,
+				35E4EBB61DB8BE440092D04C /* HomeSearchViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				35126F501D9D053400B6FBEC /* HomeHeaderCell.swift in Sources */,
 				35126F361D9CE41F00B6FBEC /* EntertainmentViewController.swift in Sources */,
 				35126F4E1D9CE74E00B6FBEC /* UIExtension.swift in Sources */,
+				35E4EBB71DB8BE440092D04C /* HomeSearchViewController.swift in Sources */,
 				35126F471D9CE51000B6FBEC /* MainTabBarController.swift in Sources */,
 				35126F401D9CE45900B6FBEC /* GoddessViewController.swift in Sources */,
 				35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */,
