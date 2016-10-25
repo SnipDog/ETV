@@ -1,6 +1,27 @@
 PODS:
   - Alamofire (4.0.1)
+  - HappyDNS (0.3.10)
   - Kingfisher (3.1.3)
+  - pili-librtmp (1.0.3.1)
+  - PLCameraStreamingKit (1.8.1):
+    - PLCameraStreamingKit/precompiled (= 1.8.1)
+    - PLStreamingKit (= 1.2.5)
+  - PLCameraStreamingKit/precompiled (1.8.1):
+    - PLStreamingKit (= 1.2.5)
+  - PLPlayerKit (2.2.2):
+    - HappyDNS
+    - pili-librtmp (= 1.0.3.1)
+    - PLPlayerKit/precompiled (= 2.2.2)
+  - PLPlayerKit/precompiled (2.2.2):
+    - HappyDNS
+    - pili-librtmp (= 1.0.3.1)
+  - PLStreamingKit (1.2.5):
+    - HappyDNS
+    - pili-librtmp (= 1.0.3.1)
+    - PLStreamingKit/precompiled (= 1.2.5)
+  - PLStreamingKit/precompiled (1.2.5):
+    - HappyDNS
+    - pili-librtmp (= 1.0.3.1)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
@@ -11,16 +32,23 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0.1)
   - Kingfisher (~> 3.1.3)
+  - PLCameraStreamingKit (~> 1.8)
+  - PLPlayerKit (~> 2.2)
   - SDCycleScrollView (~> 1.65)
   - Then (~> 2.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   Kingfisher: 007f5851c18c81e7cc106c9cbac1bafea1cce5dc
+  pili-librtmp: 0adf2516f4b5958b3cb079a4c3d4f6a4a9f49ce9
+  PLCameraStreamingKit: 12b672cbef9ba15bbb28ec543fb77f7d4cea66dc
+  PLPlayerKit: b5182ef942dce71678c9db07c2e1959df91e81cc
+  PLStreamingKit: 4b46739689d020b8e2eb755827ec86447c0291b7
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Then: 460074ffe907de3536d5e88f189dac5ef7cf0869
 
-PODFILE CHECKSUM: 07f97623a965858e0c53062c503fb4e4287b1bc4
+PODFILE CHECKSUM: 125e1d638b38c893166d7e71c2414986788c9795
 
 COCOAPODS: 1.0.1
