@@ -27,7 +27,7 @@
 		355CCFB41DAE341100290D8F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355CCFB31DAE341100290D8F /* TitleView.swift */; };
 		35691ED31DBF44CE00613FE2 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35691ED21DBF44CE00613FE2 /* Banner.swift */; };
 		3574178A1DB1E2E200840EF7 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357417891DB1E2E200840EF7 /* GameCell.swift */; };
-		35A7DDF61D9D0CEA009BCA87 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */; };
+		357805481DD8BA330055B8EE /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357805471DD8BA330055B8EE /* MineViewController.swift */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
 		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
@@ -58,7 +58,7 @@
 		355CCFB31DAE341100290D8F /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		35691ED21DBF44CE00613FE2 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		357417891DB1E2E200840EF7 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
-		35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		357805471DD8BA330055B8EE /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 		35126F211D9CE37A00B6FBEC /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				35A7DDF51D9D0CEA009BCA87 /* MineViewController.swift */,
 				35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */,
+				357805471DD8BA330055B8EE /* MineViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -359,7 +359,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				35126F381D9CE42900B6FBEC /* GameViewController.swift in Sources */,
-				35A7DDF61D9D0CEA009BCA87 /* MineViewController.swift in Sources */,
 				35691ED31DBF44CE00613FE2 /* Banner.swift in Sources */,
 				35126F2A1D9CE37A00B6FBEC /* AppDelegate.swift in Sources */,
 				35126F491D9CE53000B6FBEC /* MainNavigationController.swift in Sources */,
@@ -373,6 +372,7 @@
 				355CCFB41DAE341100290D8F /* TitleView.swift in Sources */,
 				35126F421D9CE46100B6FBEC /* HomeViewController.swift in Sources */,
 				3574178A1DB1E2E200840EF7 /* GameCell.swift in Sources */,
+				357805481DD8BA330055B8EE /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
