@@ -13,8 +13,15 @@ class MineViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.contentInset = UIEdgeInsetsMake(-26, 0, 0, 0)
+        navigationItem.rightBarButtonItem = UIBarButtonItem.itemWith(bg: "mine_settingIcon2", highBg: "mine_settingIcon2_press", target: self, imageInset: .zero, action: #selector(setting))
+    
     }
 
+    func setting() {
+        print("\(#function)")
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
