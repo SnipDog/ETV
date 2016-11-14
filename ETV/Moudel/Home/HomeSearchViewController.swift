@@ -33,7 +33,7 @@ class HomeSearchViewController: UIViewController {
     }
 
     func textFieldDidChanged(textField:UITextField) {
-        print(textField.text)
+        print(textField.text!)
     }
 
 }

@@ -30,6 +30,7 @@
 		357805481DD8BA330055B8EE /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357805471DD8BA330055B8EE /* MineViewController.swift */; };
 		3578054A1DD9519F0055B8EE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357805491DD9519F0055B8EE /* SettingViewController.swift */; };
 		3578054C1DD951B50055B8EE /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3578054B1DD951B50055B8EE /* Setting.storyboard */; };
+		3578054E1DD95AF10055B8EE /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
 		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
@@ -63,6 +64,7 @@
 		357805471DD8BA330055B8EE /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		357805491DD9519F0055B8EE /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		3578054B1DD951B50055B8EE /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				357805471DD8BA330055B8EE /* MineViewController.swift */,
 				3578054B1DD951B50055B8EE /* Setting.storyboard */,
 				357805491DD9519F0055B8EE /* SettingViewController.swift */,
+				3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -267,7 +270,7 @@
 				TargetAttributes = {
 					35126F061D9CDE8A00B6FBEC = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2HG4ZU5MBJ;
+						DevelopmentTeam = EG5JP78VYT;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -372,6 +375,7 @@
 				35126F491D9CE53000B6FBEC /* MainNavigationController.swift in Sources */,
 				35126F501D9D053400B6FBEC /* HomeHeaderCell.swift in Sources */,
 				35126F361D9CE41F00B6FBEC /* EntertainmentViewController.swift in Sources */,
+				3578054E1DD95AF10055B8EE /* QRCodeScannerViewController.swift in Sources */,
 				35126F4E1D9CE74E00B6FBEC /* UIExtension.swift in Sources */,
 				35E4EBB71DB8BE440092D04C /* HomeSearchViewController.swift in Sources */,
 				35126F471D9CE51000B6FBEC /* MainTabBarController.swift in Sources */,
@@ -497,7 +501,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2HG4ZU5MBJ;
+				DEVELOPMENT_TEAM = EG5JP78VYT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ETV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,7 +517,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2HG4ZU5MBJ;
+				DEVELOPMENT_TEAM = EG5JP78VYT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ETV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

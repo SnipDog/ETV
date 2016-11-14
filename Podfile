@@ -7,6 +7,10 @@ def pods
     pod 'SDCycleScrollView', '~> 1.65'
     pod 'Alamofire', '~> 4.0.1'
     pod 'Kingfisher', '~> 3.1.3'
+    pod 'SwiftQRCode', '~> 3.0.2'
+
+    
+    
     # 七牛直播云 - 推流端
     pod "PLCameraStreamingKit", '~> 1.8'
     # 七牛直播云 - 播放端
