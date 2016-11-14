@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SAZ-w7-IWs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code Scanner View Controller-->
+        <scene sceneID="t2j-rI-KsR">
+            <objects>
+                <viewController id="SAZ-w7-IWs" customClass="QRCodeScannerViewController" customModule="ETV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AqL-0t-wJC"/>
+                        <viewControllerLayoutGuide type="bottom" id="hsX-qN-eod"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ua6-0G-Ma6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-eg-X2V" userLabel="tipsView">
+                                <rect key="frame" x="0.0" y="269.5" width="375" height="128"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-8A-RsA">
+                                        <rect key="frame" x="177.5" y="29" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmc-Mm-tXl">
+                                        <rect key="frame" x="155.5" y="51" width="84" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7bC-XA-AOd"/>
+                                    <constraint firstItem="dw1-8A-RsA" firstAttribute="centerX" secondItem="RoG-eg-X2V" secondAttribute="centerX" id="EOl-gu-guf"/>
+                                    <constraint firstItem="dw1-8A-RsA" firstAttribute="top" secondItem="RoG-eg-X2V" secondAttribute="top" constant="29" id="O7M-YB-HY7"/>
+                                    <constraint firstItem="Wmc-Mm-tXl" firstAttribute="centerX" secondItem="dw1-8A-RsA" secondAttribute="centerX" constant="10" id="qAo-lz-jDY"/>
+                                    <constraint firstItem="Wmc-Mm-tXl" firstAttribute="top" secondItem="dw1-8A-RsA" secondAttribute="bottom" constant="2" id="sDe-cn-bIg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-uo-Bpm" userLabel="QRView">
+                                <rect key="frame" x="60" y="206" width="255" height="255"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_borde_01" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-dR-Znt">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_borde_02" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-qR-zld">
+                                        <rect key="frame" x="239" y="0.0" width="16" height="16"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_borde_03" translatesAutoresizingMaskIntoConstraints="NO" id="4St-Fv-Pw0">
+                                        <rect key="frame" x="0.0" y="239" width="16" height="16"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_borde_04" translatesAutoresizingMaskIntoConstraints="NO" id="8rF-qE-Ceo">
+                                        <rect key="frame" x="239" y="239" width="16" height="16"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline" translatesAutoresizingMaskIntoConstraints="NO" id="c11-TC-AB6">
+                                        <rect key="frame" x="-1.5" y="14" width="258" height="2"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4St-Fv-Pw0" firstAttribute="leading" secondItem="uhu-uo-Bpm" secondAttribute="leading" id="Gjg-WS-92a"/>
+                                    <constraint firstAttribute="width" secondItem="uhu-uo-Bpm" secondAttribute="height" multiplier="1:1" id="INI-Zb-x45"/>
+                                    <constraint firstItem="dSW-dR-Znt" firstAttribute="top" secondItem="uhu-uo-Bpm" secondAttribute="top" id="cLJ-hP-u2O"/>
+                                    <constraint firstItem="dSW-dR-Znt" firstAttribute="leading" secondItem="uhu-uo-Bpm" secondAttribute="leading" id="cpV-Js-pUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="8rF-qE-Ceo" secondAttribute="trailing" id="dTM-P0-AWW"/>
+                                    <constraint firstAttribute="bottom" secondItem="4St-Fv-Pw0" secondAttribute="bottom" id="eOb-V4-5Lj"/>
+                                    <constraint firstItem="JOK-qR-zld" firstAttribute="top" secondItem="uhu-uo-Bpm" secondAttribute="top" id="elJ-74-bgo"/>
+                                    <constraint firstItem="c11-TC-AB6" firstAttribute="top" secondItem="uhu-uo-Bpm" secondAttribute="top" constant="14" id="gBD-DG-1GF"/>
+                                    <constraint firstAttribute="bottom" secondItem="8rF-qE-Ceo" secondAttribute="bottom" id="qZQ-o6-Mwt"/>
+                                    <constraint firstAttribute="trailing" secondItem="JOK-qR-zld" secondAttribute="trailing" id="sT1-oM-K3a"/>
+                                    <constraint firstItem="c11-TC-AB6" firstAttribute="centerX" secondItem="uhu-uo-Bpm" secondAttribute="centerX" id="tU7-qF-WaP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将二维码放入框内" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z7-yp-YYc">
+                                <rect key="frame" x="118" y="481" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uhu-uo-Bpm" firstAttribute="leading" secondItem="Ua6-0G-Ma6" secondAttribute="leading" constant="60" id="91W-Z4-mio"/>
+                            <constraint firstItem="7Z7-yp-YYc" firstAttribute="centerX" secondItem="uhu-uo-Bpm" secondAttribute="centerX" id="MZb-kU-GSa"/>
+                            <constraint firstAttribute="trailing" secondItem="RoG-eg-X2V" secondAttribute="trailing" id="PDi-7Q-mdT"/>
+                            <constraint firstItem="RoG-eg-X2V" firstAttribute="centerY" secondItem="Ua6-0G-Ma6" secondAttribute="centerY" id="QY5-Bx-rY1"/>
+                            <constraint firstItem="uhu-uo-Bpm" firstAttribute="centerY" secondItem="Ua6-0G-Ma6" secondAttribute="centerY" id="hcM-Hu-vXa"/>
+                            <constraint firstAttribute="trailing" secondItem="uhu-uo-Bpm" secondAttribute="trailing" constant="60" id="rLI-Om-u6f"/>
+                            <constraint firstItem="7Z7-yp-YYc" firstAttribute="top" secondItem="uhu-uo-Bpm" secondAttribute="bottom" constant="20" id="u4w-9e-xwx"/>
+                            <constraint firstItem="RoG-eg-X2V" firstAttribute="leading" secondItem="Ua6-0G-Ma6" secondAttribute="leading" id="xW8-TG-wfM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineTopConst" destination="gBD-DG-1GF" id="oZ8-tP-bql"/>
+                        <outlet property="qrLine" destination="c11-TC-AB6" id="t2m-cr-LIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRR-qY-tQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.40000000000001" y="66.11694152923539"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qrcode_borde_01" width="16" height="16"/>
+        <image name="qrcode_borde_02" width="16" height="16"/>
+        <image name="qrcode_borde_03" width="16" height="16"/>
+        <image name="qrcode_borde_04" width="16" height="16"/>
+        <image name="qrcode_scanline" width="258" height="2"/>
+    </resources>
+</document>

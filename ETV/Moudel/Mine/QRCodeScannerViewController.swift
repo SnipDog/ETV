@@ -7,25 +7,20 @@
 //
 
 import UIKit
+import AVFoundation
 import SwiftQRCode
 
 class QRCodeScannerViewController: UIViewController {
+    @IBOutlet weak var lineTopConst: NSLayoutConstraint!
 
+    @IBOutlet weak var qrLine: UIImageView!
+    
     let scanner = QRCode(autoRemoveSubLayers: false, lineWidth: 1, strokeColor: UIColor.colorFromRGB(rgbValue: 0x24CD89, alpha: 1.0), maxDetectedCount: 1)
     
-    override func viewDidLoad() {
-        
-        configUI()
-        
-        super.viewDidLoad()
-        
-    }
     
-    func configUI() {
-        
-        view.backgroundColor = UIColor.black
-        
-        
+    // MARK: Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
         scanner.prepareScan(view) { (stringValue) -> () in
             print(stringValue)
         }
@@ -34,9 +29,24 @@ class QRCodeScannerViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // start scan
         scanner.startScan()
+        startAnimation()
+        // start scan
+
+    }
+    
+    
+   // MARK: Actions
+
+    func startAnimation(){
+            // 初始位置
+        lineTopConst.constant = 14
+        self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 2.5){
+            UIView.setAnimationRepeatCount(MAXFLOAT)
+            self.lineTopConst.constant = self.qrLine.width;
+            self.view.layoutIfNeeded()
+        }
     }
 
     override func didReceiveMemoryWarning() {

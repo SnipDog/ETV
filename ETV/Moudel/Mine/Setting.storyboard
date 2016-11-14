@@ -49,7 +49,7 @@
                             </tableViewSection>
                             <tableViewSection id="PJ9-vZ-TbN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="r2M-Sj-Hve">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="r2M-Sj-Hve">
                                         <rect key="frame" x="0.0" y="87" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r2M-Sj-Hve" id="2dD-BO-W02">
@@ -79,7 +79,7 @@
                             </tableViewSection>
                             <tableViewSection id="Mjk-x6-T3W">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hcw-ev-9BZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="hcw-ev-9BZ">
                                         <rect key="frame" x="0.0" y="139" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hcw-ev-9BZ" id="2e8-Kn-cqa">

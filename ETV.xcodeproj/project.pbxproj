@@ -31,6 +31,7 @@
 		3578054A1DD9519F0055B8EE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357805491DD9519F0055B8EE /* SettingViewController.swift */; };
 		3578054C1DD951B50055B8EE /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3578054B1DD951B50055B8EE /* Setting.storyboard */; };
 		3578054E1DD95AF10055B8EE /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */; };
+		357805531DD98EA60055B8EE /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357805521DD98EA60055B8EE /* QRCode.storyboard */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
 		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
@@ -65,6 +66,7 @@
 		357805491DD9519F0055B8EE /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		3578054B1DD951B50055B8EE /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		357805521DD98EA60055B8EE /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				3578054B1DD951B50055B8EE /* Setting.storyboard */,
 				357805491DD9519F0055B8EE /* SettingViewController.swift */,
 				3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */,
+				357805521DD98EA60055B8EE /* QRCode.storyboard */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				35126F2B1D9CE37A00B6FBEC /* Assets.xcassets in Resources */,
 				35126F2C1D9CE37A00B6FBEC /* LaunchScreen.storyboard in Resources */,
 				3578054C1DD951B50055B8EE /* Setting.storyboard in Resources */,
+				357805531DD98EA60055B8EE /* QRCode.storyboard in Resources */,
 				35126F441D9CE46900B6FBEC /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

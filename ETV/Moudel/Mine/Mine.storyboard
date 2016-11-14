@@ -33,7 +33,7 @@
                                                         <constraint firstAttribute="height" constant="56" id="ZLq-Je-93D"/>
                                                         <constraint firstAttribute="width" constant="56" id="wb2-ND-07N"/>
                                                     </constraints>
-                                                    <state key="normal" backgroundImage="avatar_default_small"/>
+                                                    <state key="normal" backgroundImage="photo_default_icon"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="28"/>
@@ -309,7 +309,6 @@
     <resources>
         <image name="arrow_right" width="13" height="13"/>
         <image name="arrow_right2" width="13" height="13"/>
-        <image name="avatar_default_small" width="34" height="34"/>
         <image name="mine_activityIcon" width="22" height="22"/>
         <image name="mine_attentionIcon" width="22" height="22"/>
         <image name="mine_histroyIcon" width="22" height="22"/>
@@ -317,5 +316,6 @@
         <image name="mine_remindIcon" width="22" height="22"/>
         <image name="mine_suggestIcon" width="22" height="22"/>
         <image name="mine_zhubo" width="22" height="22"/>
+        <image name="photo_default_icon" width="56" height="56"/>
     </resources>
 </document>
