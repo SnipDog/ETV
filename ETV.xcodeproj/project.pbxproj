@@ -28,6 +28,8 @@
 		35691ED31DBF44CE00613FE2 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35691ED21DBF44CE00613FE2 /* Banner.swift */; };
 		3574178A1DB1E2E200840EF7 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357417891DB1E2E200840EF7 /* GameCell.swift */; };
 		357805481DD8BA330055B8EE /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357805471DD8BA330055B8EE /* MineViewController.swift */; };
+		3578054A1DD9519F0055B8EE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357805491DD9519F0055B8EE /* SettingViewController.swift */; };
+		3578054C1DD951B50055B8EE /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3578054B1DD951B50055B8EE /* Setting.storyboard */; };
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
 		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
@@ -59,6 +61,8 @@
 		35691ED21DBF44CE00613FE2 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		357417891DB1E2E200840EF7 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		357805471DD8BA330055B8EE /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		357805491DD9519F0055B8EE /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		3578054B1DD951B50055B8EE /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 			children = (
 				35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */,
 				357805471DD8BA330055B8EE /* MineViewController.swift */,
+				3578054B1DD951B50055B8EE /* Setting.storyboard */,
+				357805491DD9519F0055B8EE /* SettingViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				35126F341D9CE40C00B6FBEC /* Entertainment.storyboard in Resources */,
 				35126F2B1D9CE37A00B6FBEC /* Assets.xcassets in Resources */,
 				35126F2C1D9CE37A00B6FBEC /* LaunchScreen.storyboard in Resources */,
+				3578054C1DD951B50055B8EE /* Setting.storyboard in Resources */,
 				35126F441D9CE46900B6FBEC /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +368,7 @@
 				35126F381D9CE42900B6FBEC /* GameViewController.swift in Sources */,
 				35691ED31DBF44CE00613FE2 /* Banner.swift in Sources */,
 				35126F2A1D9CE37A00B6FBEC /* AppDelegate.swift in Sources */,
+				3578054A1DD9519F0055B8EE /* SettingViewController.swift in Sources */,
 				35126F491D9CE53000B6FBEC /* MainNavigationController.swift in Sources */,
 				35126F501D9D053400B6FBEC /* HomeHeaderCell.swift in Sources */,
 				35126F361D9CE41F00B6FBEC /* EntertainmentViewController.swift in Sources */,

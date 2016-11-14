@@ -1,28 +1,26 @@
 //
-//  MineViewController.swift
+//  SettingViewController.swift
 //  ETV
 //
-//  Created by Heisenbean on 16/11/13.
+//  Created by Heisenbean on 16/11/14.
 //  Copyright © 2016年 Heisenbean. All rights reserved.
 //
 
 import UIKit
 
-class MineViewController: UITableViewController {
+class SettingViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.contentInset = UIEdgeInsetsMake(-26, 0, 0, 0)
-        navigationItem.rightBarButtonItem = UIBarButtonItem.itemWith(bg: "mine_settingIcon2", highBg: "mine_settingIcon2_press", target: self, imageInset: .zero, action: #selector(setting))
-    
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    func setting() {
-        let setttingVc = UIStoryboard.initialViewController("Setting")
-        navigationController?.pushViewController(setttingVc, animated: true)
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,4 +31,6 @@ class MineViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+
+    
 }
