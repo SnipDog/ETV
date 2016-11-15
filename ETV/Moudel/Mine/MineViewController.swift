@@ -32,5 +32,9 @@ class MineViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 0{
+            let login = UIStoryboard.initialViewController("Login")
+            navigationController?.pushViewController(login, animated: true)
+        }
     }
 }

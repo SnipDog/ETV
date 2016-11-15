@@ -35,6 +35,8 @@
 		35A7DDF81D9D0D0E009BCA87 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */; };
 		35A7DE2E1D9E2118009BCA87 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */; };
 		35A7DE301D9E3BD6009BCA87 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */; };
+		35B95FA91DDB431000CDF8FA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B95FA81DDB431000CDF8FA /* Login.storyboard */; };
+		35B95FAB1DDB432000CDF8FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B95FAA1DDB432000CDF8FA /* LoginViewController.swift */; };
 		35E4EBB71DB8BE440092D04C /* HomeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E4EBB61DB8BE440092D04C /* HomeSearchViewController.swift */; };
 		F5DBFDB76CCA8A0F1800B1D2 /* Pods_ETV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9466DB3AA2FC0B28F41D9 /* Pods_ETV.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,8 @@
 		35A7DDF71D9D0D0E009BCA87 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		35A7DE2D1D9E2118009BCA87 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		35A7DE2F1D9E3BD6009BCA87 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		35B95FA81DDB431000CDF8FA /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		35B95FAA1DDB432000CDF8FA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		35E4EBB61DB8BE440092D04C /* HomeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSearchViewController.swift; sourceTree = "<group>"; };
 		9585B88DBD03C00BCE76E4CC /* Pods-ETV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.release.xcconfig"; sourceTree = "<group>"; };
 		FCEDEAC18A20560725245C08 /* Pods-ETV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETV/Pods-ETV.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				357805491DD9519F0055B8EE /* SettingViewController.swift */,
 				3578054D1DD95AF10055B8EE /* QRCodeScannerViewController.swift */,
 				357805521DD98EA60055B8EE /* QRCode.storyboard */,
+				35B95FA81DDB431000CDF8FA /* Login.storyboard */,
+				35B95FAA1DDB432000CDF8FA /* LoginViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 				3578054C1DD951B50055B8EE /* Setting.storyboard in Resources */,
 				357805531DD98EA60055B8EE /* QRCode.storyboard in Resources */,
 				35126F441D9CE46900B6FBEC /* Home.storyboard in Resources */,
+				35B95FA91DDB431000CDF8FA /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B95FAB1DDB432000CDF8FA /* LoginViewController.swift in Sources */,
 				35126F381D9CE42900B6FBEC /* GameViewController.swift in Sources */,
 				35691ED31DBF44CE00613FE2 /* Banner.swift in Sources */,
 				35126F2A1D9CE37A00B6FBEC /* AppDelegate.swift in Sources */,
