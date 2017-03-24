@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import Then
+import SwiftyJSON
 class HomeViewController: UIViewController {
     
     // MARK: Init Properties
@@ -25,7 +26,7 @@ class HomeViewController: UIViewController {
 
     var banners = [[String:AnyObject]]()
     
-    var datas = [[String : AnyObject]]()
+    var datas = [JSON]()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -74,10 +75,11 @@ class HomeViewController: UIViewController {
 
     func loadData() {
         Alamofire.request(kDataReqeutUrl).responseJSON { response in
-            if let json = response.result.value {
-                let jsonData = json as! [String:AnyObject]
-                for data in jsonData["data"] as! [[String : AnyObject]]{
-                    self.datas.append(data)
+            if let json = response.data {
+                let jsonData = JSON(data: json)
+                let jsons = jsonData["data"].arrayValue
+                for j in jsons{
+                    self.datas.append(j)
                 }
                 self.tableview.reloadData()
             }
