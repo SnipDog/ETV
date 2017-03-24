@@ -71,7 +71,7 @@ class MainNavigationController: UINavigationController {
     }
 
     func back() {
-        self.popViewController(animated: true)
+       _ = self.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation
