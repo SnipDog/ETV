@@ -119,7 +119,7 @@ extension CGRect {
 extension UIColor {
     
     
-    class func colorFromRGB(rgbValue: Int, alpha: CGFloat) -> UIColor {
+    class func colorFromRGB(_ rgbValue: Int, alpha: CGFloat) -> UIColor {
         
         return UIColor(red: ((CGFloat)((rgbValue & 0xFF0000) >> 16))/255.0, green: ((CGFloat)((rgbValue & 0xFF00) >> 8))/255.0, blue: ((CGFloat)(rgbValue & 0xFF))/255.0, alpha: alpha)
     }
@@ -137,7 +137,7 @@ extension UIColor {
 
 extension UIBarButtonItem {
     
-    class func itemWith(bg: String, highBg: String, target: AnyObject, imageInset: UIEdgeInsets, action: Selector) -> UIBarButtonItem {
+    class func itemWith(_ bg: String, highBg: String, target: AnyObject, imageInset: UIEdgeInsets, action: Selector) -> UIBarButtonItem {
         
         let button = UIButton()
         
@@ -150,7 +150,7 @@ extension UIBarButtonItem {
         return UIBarButtonItem(customView: button)
     }
     
-    class func itemWithButton(bg: String, highBg: String, imageInset: UIEdgeInsets) -> UIBarButtonItem {
+    class func itemWithButton(_ bg: String, highBg: String, imageInset: UIEdgeInsets) -> UIBarButtonItem {
         
         let button = UIButton()
         

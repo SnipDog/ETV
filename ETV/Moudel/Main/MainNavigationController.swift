@@ -27,7 +27,7 @@ class MainNavigationController: UINavigationController {
         super.initialize()
     }
     
-    private class func setAppearance() {
+    fileprivate class func setAppearance() {
         
     }
 
@@ -55,7 +55,7 @@ class MainNavigationController: UINavigationController {
         if childViewControllers.count > 0 {
             
             //设置返回按钮
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.itemWith(bg: "setting_back", highBg: "setting_back", target: self, imageInset: UIEdgeInsetsMake(0, 0, 0, 0), action: #selector(self.back))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.itemWith("setting_back", highBg: "setting_back", target: self, imageInset: UIEdgeInsetsMake(0, 0, 0, 0), action: #selector(self.back))
             viewController.hidesBottomBarWhenPushed = true
         }
         

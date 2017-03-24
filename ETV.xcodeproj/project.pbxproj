@@ -280,7 +280,7 @@
 					35126F061D9CDE8A00B6FBEC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = EG5JP78VYT;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};

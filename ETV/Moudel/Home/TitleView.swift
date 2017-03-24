@@ -23,7 +23,7 @@ class TitleView: UIScrollView {
     }
 
     
-   public var titles = [String](){
+   open var titles = [String](){
         didSet{
             for idx in 0...titles.count-1{
                 let _ = UIButton().then {

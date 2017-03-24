@@ -15,7 +15,7 @@ class QRCodeScannerViewController: UIViewController {
 
     @IBOutlet weak var qrLine: UIImageView!
     
-    let scanner = QRCode(autoRemoveSubLayers: false, lineWidth: 1, strokeColor: UIColor.colorFromRGB(rgbValue: 0x24CD89, alpha: 1.0), maxDetectedCount: 1)
+    let scanner = QRCode(autoRemoveSubLayers: false, lineWidth: 1, strokeColor: UIColor.colorFromRGB(0x24CD89, alpha: 1.0), maxDetectedCount: 1)
     
     
     // MARK: Life Cycle

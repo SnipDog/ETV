@@ -21,7 +21,7 @@ class Banner: NSObject {
         setValuesForKeys(dict)
     }
     
-    class func banners(dictArray: [[String: AnyObject]]) -> [Banner]? {
+    class func banners(_ dictArray: [[String: AnyObject]]) -> [Banner]? {
         
         if dictArray.count == 0{
             return nil

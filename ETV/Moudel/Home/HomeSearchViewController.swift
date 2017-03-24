@@ -12,7 +12,7 @@ class HomeSearchViewController: UIViewController {
 
     let searchTextField = UITextField().then{
         $0.frame = CGRect(x: 0, y: 0, width:UIScreen.main.bounds.width - 80, height: 30)
-        $0.backgroundColor = UIColor.colorFromRGB(rgbValue: 0xededed, alpha: 1.0)
+        $0.backgroundColor = UIColor.colorFromRGB(0xededed, alpha: 1.0)
         $0.placeholder = "搜索房间ID,主播名称"
         $0.font = UIFont.systemFont(ofSize: 14)
     }
@@ -27,12 +27,14 @@ class HomeSearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func configUI(){
+    fileprivate func configUI(){
         self.navigationItem.titleView = searchTextField
+//        button.addTarget(self, action:#selector(handleRegister(_:)), for: .touchUpInside).
+
         searchTextField.addTarget(self, action: #selector(textFieldDidChanged(textField:)), for: .editingChanged)
     }
 
-    func textFieldDidChanged(textField:UITextField) {
+    func textFieldDidChanged(textField : UITextField) {
         print(textField.text!)
     }
 
